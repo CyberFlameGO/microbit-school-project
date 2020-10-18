@@ -1,3 +1,12 @@
+input.onGesture(Gesture.EightG, function () {
+    basic.showLeds(`
+        # . . . #
+        . . . . .
+        . # # # .
+        # . . . #
+        # . . . #
+        `)
+})
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(6)
     basic.pause(100)
@@ -43,13 +52,22 @@ input.onButtonPressed(Button.A, function () {
     basic.pause(2000)
     basic.showIcon(IconNames.Heart)
 })
+input.onGesture(Gesture.FreeFall, function () {
+    basic.showLeds(`
+        # # . # #
+        # . . . #
+        . # # # .
+        . # . # .
+        . # # # .
+        `)
+})
 input.onGesture(Gesture.LogoUp, function () {
     basic.showLeds(`
-        . # # # .
-        # . . . #
+        . # . # .
+        . # . # .
         . . . . .
-        . # . # .
-        . # . # .
+        # . . . #
+        . # # # .
         `)
 })
 input.onGesture(Gesture.TiltLeft, function () {
@@ -59,6 +77,33 @@ input.onGesture(Gesture.TiltLeft, function () {
         # . . . .
         # . . # #
         . # . . .
+        `)
+})
+input.onGesture(Gesture.SixG, function () {
+    basic.showLeds(`
+        # . . . #
+        . . . . .
+        . . . . .
+        . # # # .
+        # . . . #
+        `)
+})
+input.onGesture(Gesture.ScreenUp, function () {
+    basic.showLeds(`
+        # # # # #
+        # . . . #
+        # . . . #
+        # . . . #
+        # # # # #
+        `)
+})
+input.onGesture(Gesture.ScreenDown, function () {
+    basic.showLeds(`
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
         `)
 })
 input.onButtonPressed(Button.B, function () {
@@ -84,10 +129,19 @@ input.onGesture(Gesture.TiltRight, function () {
 })
 input.onGesture(Gesture.LogoDown, function () {
     basic.showLeds(`
-        . # . # .
-        . # . # .
-        . . . . .
-        # . . . #
         . # # # .
+        # . . . #
+        . . . . .
+        . # . # .
+        . # . # .
+        `)
+})
+input.onGesture(Gesture.ThreeG, function () {
+    basic.showLeds(`
+        # # . # #
+        # # . # #
+        . . . . .
+        . # # # .
+        . . . . .
         `)
 })
