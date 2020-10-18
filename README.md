@@ -1,6 +1,3 @@
-**rami quanbulat yadwia** 
-
-
 > Open this page at [https://cyberflamego.github.io/microbit-school-project/](https://cyberflamego.github.io/microbit-school-project/)
 
 ## Use as Extension
