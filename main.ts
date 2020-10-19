@@ -1,11 +1,14 @@
+let toggle = 0
 input.onGesture(Gesture.EightG, function () {
-    basic.showLeds(`
-        # . . . #
-        . . . . .
-        . # # # .
-        # . . . #
-        # . . . #
-        `)
+    if (toggle == 1) {
+        basic.showLeds(`
+            # . . . #
+            . . . . .
+            . # # # .
+            # . . . #
+            # . . . #
+            `)
+    }
 })
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(6)
@@ -53,95 +56,113 @@ input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Heart)
 })
 input.onGesture(Gesture.FreeFall, function () {
-    basic.showLeds(`
-        # # . # #
-        # . . . #
-        . # # # .
-        . # . # .
-        . # # # .
-        `)
+    if (toggle == 1) {
+        basic.showLeds(`
+            # # . # #
+            # . . . #
+            . # # # .
+            . # . # .
+            . # # # .
+            `)
+    }
 })
 input.onGesture(Gesture.LogoUp, function () {
-    basic.showLeds(`
-        . # . # .
-        . # . # .
-        . . . . .
-        # . . . #
-        . # # # .
-        `)
+    if (toggle == 1) {
+        basic.showLeds(`
+            . # . # .
+            . # . # .
+            . . . . .
+            # . . . #
+            . # # # .
+            `)
+    }
 })
 input.onGesture(Gesture.TiltLeft, function () {
-    basic.showLeds(`
-        . # . . .
-        # . . # #
-        # . . . .
-        # . . # #
-        . # . . .
-        `)
+    if (toggle == 1) {
+        basic.showLeds(`
+            . # . . .
+            # . . # #
+            # . . . .
+            # . . # #
+            . # . . .
+            `)
+    }
 })
 input.onGesture(Gesture.SixG, function () {
-    basic.showLeds(`
-        # . . . #
-        . . . . .
-        . . . . .
-        . # # # .
-        # . . . #
-        `)
+    if (toggle == 1) {
+        basic.showLeds(`
+            # . . . #
+            . . . . .
+            . . . . .
+            . # # # .
+            # . . . #
+            `)
+    }
 })
 input.onGesture(Gesture.ScreenUp, function () {
-    basic.showLeds(`
-        # # # # #
-        # . . . #
-        # . . . #
-        # . . . #
-        # # # # #
-        `)
+    if (toggle == 1) {
+        basic.showLeds(`
+            # # # # #
+            # . . . #
+            # . . . #
+            # . . . #
+            # # # # #
+            `)
+    }
 })
 input.onGesture(Gesture.ScreenDown, function () {
-    basic.showLeds(`
-        # # # # #
-        # # # # #
-        # # # # #
-        # # # # #
-        # # # # #
-        `)
+    if (toggle == 1) {
+        basic.showLeds(`
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            `)
+    }
 })
 input.onButtonPressed(Button.B, function () {
     basic.showIcon(IconNames.Scissors)
+    if (toggle == 1) {
+        toggle = 0
+    } else {
+        toggle = 1
+    }
 })
 input.onGesture(Gesture.Shake, function () {
-    basic.showLeds(`
-        . . # . .
-        . . # . .
-        . . # . .
-        . . . . .
-        . . # . .
-        `)
+    basic.showString("uwu shake me")
 })
 input.onGesture(Gesture.TiltRight, function () {
-    basic.showLeds(`
-        . . . # .
-        # # . . #
-        . . . . #
-        # # . . #
-        . . . # .
-        `)
+    if (toggle == 1) {
+        basic.showLeds(`
+            . . . # .
+            # # . . #
+            . . . . #
+            # # . . #
+            . . . # .
+            `)
+    }
 })
 input.onGesture(Gesture.LogoDown, function () {
-    basic.showLeds(`
-        . # # # .
-        # . . . #
-        . . . . .
-        . # . # .
-        . # . # .
-        `)
+    if (toggle == 1) {
+        basic.showLeds(`
+            . # # # .
+            # . . . #
+            . . . . .
+            . # . # .
+            . # . # .
+            `)
+        basic.showArrow(ArrowNames.North)
+    }
 })
 input.onGesture(Gesture.ThreeG, function () {
-    basic.showLeds(`
-        # # . # #
-        # # . # #
-        . . . . .
-        . # # # .
-        . . . . .
-        `)
+    if (toggle == 1) {
+        basic.showLeds(`
+            # # . # #
+            # # . # #
+            . . . . .
+            . # # # .
+            . . . . .
+            `)
+    }
 })
